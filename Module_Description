@@ -1,0 +1,24 @@
+MODULE DESCRIPTION
+
+1. Gathering Data:       We used a tool called Twitter Archiver to collect tweets containing specific political hashtags, like #BJP and #Congress.
+                         This allowed us to identify tweets that expressed support for or opposition to various political parties.
+
+2. Preprocessing:        Before analyzing the tweets, we removed unnecessary elements like website links, hashtags, mentions of other users, common words, emoticons, and punctuation. 
+                         This helped focus the analysis on the core meaning of each tweet.
+
+3. Negation Handling:    To accurately determine the sentiment of a tweet, we considered words expressing negation (e.g., "not", "never"). 
+                         This allowed us to distinguish between positive and negative opinions, even when stated indirectly.
+
+4. Algorithms Used:
+                         i)Dictionary Approach: 
+                                                Each word was assigned a score based on its positive or negative connotation using a resource called SentiWordnet. 
+                                                By summing the scores of all words, we can determine the overall sentiment of the tweet.
+                    
+                         ii)Naïve Bayes Classifier:
+                                                This method used probability theory to classify tweets based on the likelihood of words appearing in positive or negative contexts.
+                    
+                         iii)Support Vector Machine (SVM): 
+                                                This powerful technique mapped each tweet into a complex space, allowing researchers to identify patterns 
+                                                and classify sentiment based on these patterns.
+
+
